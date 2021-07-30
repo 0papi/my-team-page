@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; 
+}
+
+
+img {
+  max-width: 100%;
+  display:  block;
+}
+
+
+
+/* Base styles */
+.container {
+  max-width: 375px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+/* header items */
+
+.header-items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6em;
+}
+
+
+
+/* main team page */
+
+.main-team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1em;
+}
+
+.photo {
+  padding: 2em;
+  position: relative;
+}
+
+.photo h3 {
+  font-size: 14px;
+}
+
+.title {
+  position: absolute;
+  top: 18.5%;
+  left: 65%;
+  transform: rotate(90deg);
+  font-size: 10px;
+  width: 80px;
+}
+
+.photo-2,
+.photo-4,
+.photo-6 {
+  margin-top: 80px;
+}
+
+.photo-1 .title,
+.photo-3 .title,
+.photo-5 .title {
+  top: 14%;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+
+
+/* media querries */
+
+@media(min-width: 650px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .header-items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .crew-intro {
+    max-width: 25%;
+  }
+
+  .main-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photo-5 {
+    margin-top: 160px;
+  }
+
+  .title {
+    top: 12.5%;
+    left: 74%; 
+  }
+
+  .photo-2 .title, 
+  .photo-4 .title,
+  .photo-6 .title {
+    top: 14%;
+  } 
+
+  .photo-1 .title,
+  .photo-3 .title,
+  .photo-4 .title,
+  .photo-6 .title{
+    top: 11.5%;
+  }
+
+
+  .photo {
+    max-width: 250px;
+  }
+
+
+  
+}
